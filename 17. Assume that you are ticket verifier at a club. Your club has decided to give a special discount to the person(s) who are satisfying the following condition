@@ -1,0 +1,20 @@
+Assume that you are ticket verifier at a club. Your club has decided to give a special discount to the person(s) who are satisfying the following condition
+Sample Input :
+6
+112 139 165 175 262 130
+22
+Sample Output :
+0 0 0 0 0 0
+
+
+a=int(input())
+arr=list(map(int,input().split()))
+date=int(input())
+arr1=[]
+for i in range (a):
+    if arr[i]%date==0:
+        arr1.append(1)
+    else:
+        arr1.append(0)
+print(*arr1)
+ 
