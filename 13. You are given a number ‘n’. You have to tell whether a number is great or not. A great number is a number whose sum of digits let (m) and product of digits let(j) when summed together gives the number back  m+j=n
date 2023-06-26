@@ -1,0 +1,24 @@
+You are given a number ‘n’. You have to tell whether a number is great or not. A great number is a number whose sum of digits let (m) and product of digits let(j) when summed together gives the number back
+m+j=n
+Sample Input :
+59
+Sample Output :
+Great
+
+
+
+ n = int(input())
+t = n
+d = 1
+r = 0
+p = 1
+while(n>0):
+    d = n%10
+    r += d
+    n = n//10
+    p = d*p
+A = r+p
+if A == t:
+    print('Great')
+else:
+    print('no')
